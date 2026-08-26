@@ -1,6 +1,12 @@
 List<Map<String, String>> usuarios = [
-  {'nome': "Administrador", 'email': 'adm@gmail.com', 'senha': '1234'},
-  {'nome': "João Silva", 'email': 'joao.silva@gmail.com', 'senha': 'senha123'},
+  {'nome': "Administrador",
+   'email': 'adm@gmail.com',
+  'senha': '1234'
+  },
+  {'nome': "João Silva",
+   'email': 'joao.silva@gmail.com',
+    'senha': 'senha123'
+  },
   {
     'nome': "Maria Santos",
     'email': 'maria.santos@gmail.com',
@@ -42,8 +48,20 @@ List<Map<String, String>> usuarios = [
     'email': 'patricia.gomes@gmail.com',
     'senha': 'patricia789',
   },
-  {'nome': "Matheus", 'email': 'matheus@gmail.com', 'senha': 'matheus123'},
-  {'nome': "Liminha", 'email': 'liminha@gmail.com', 'senha': 'liminha456'},
-  {'nome': "Lavinia", 'email': 'lavinia@gmail.com', 'senha': 'lavinia789'},
-  {'nome': "Lenin", 'email': 'lenin@gmail.com', 'senha': 'lenin2024'},
+  {'nome': "Matheus",
+   'email': 'matheus@gmail.com',
+   'senha': 'matheus123'
+  },
+  {'nome': "Liminha",
+   'email': 'liminha@gmail.com',
+    'senha': 'liminha456'
+  },
+  {'nome': "Lavinia",
+   'email': 'lavinia@gmail.com',
+    'senha': 'lavinia789'
+    },
+  {'nome': "Lenin",
+   'email': 'lenin@gmail.com',
+    'senha': 'lenin2024'
+    },
 ];
