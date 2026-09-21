@@ -96,6 +96,7 @@ class _LoginPageState extends State<LoginPage> {
       final String nome = usuario['nome'] ?? 'Usuario';
       final String emailUsuario = usuario['email'] ?? email;
 
+      if (!context.mounted) return;
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
