@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Dados de um reel exibido na tela de reels.
 class Reel {
   const Reel({
     required this.usuario,
@@ -19,10 +18,6 @@ class Reel {
   final String comentarios;
 }
 
-/// Modelos usados para montar as páginas de reels carregadas aos poucos.
-///
-/// O app ainda não tem servidor, então a lista abaixo é reutilizada pelas
-/// páginas seguintes, simulando um acervo infinito de reels.
 const List<Reel> modelosDeReels = [
   Reel(
     usuario: '@flutter.dev',

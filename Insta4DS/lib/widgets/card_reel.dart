@@ -3,7 +3,6 @@ import 'package:instagram_flutter/models/reel.dart';
 import 'package:instagram_flutter/utils/mensagem_util.dart';
 import 'package:instagram_flutter/widgets/botao_reels.dart';
 
-/// Mostra um reel ocupando a tela inteira, com os botões de interação.
 class CardReel extends StatelessWidget {
   final Reel reel;
 

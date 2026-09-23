@@ -12,7 +12,6 @@ Widget montarTela(Widget tela) {
   return MaterialApp(home: Scaffold(body: tela));
 }
 
-/// Rola a tela de reels para o proximo reel e espera a animacao encaixar a pagina.
 Future<void> rolarParaProximoReel(WidgetTester tester) async {
   await tester.drag(find.byType(PageView), const Offset(0, -600));
   await tester.pump();
@@ -131,20 +130,17 @@ void main() {
 
     expect(find.text(modelosDeReels[0].usuario), findsOneWidget);
 
-    // Rola ate o ultimo reel carregado, o que ja dispara a busca da proxima pagina.
     await rolarParaProximoReel(tester);
     await rolarParaProximoReel(tester);
 
     expect(find.text(modelosDeReels[2].usuario), findsOneWidget);
     expect(find.byType(CircularProgressIndicator), findsNothing);
 
-    // Enquanto a busca nao termina, o fim da lista mostra o indicador.
     await tester.drag(find.byType(PageView), const Offset(0, -600));
     await tester.pump();
 
     expect(find.text('Carregando mais reels...'), findsOneWidget);
 
-    // Depois do carregamento o indicador da lugar ao primeiro reel da nova pagina.
     await tester.pump(const Duration(milliseconds: 900));
 
     expect(find.byType(CircularProgressIndicator), findsNothing);
